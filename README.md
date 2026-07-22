@@ -20,6 +20,18 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Hosted Assets
+
+Static files in `public/` are served at the site root after deploy.
+
+### Email signature certifications footer
+
+- Public URL: https://romulosilvarosa.github.io/certifications_footer.png
+- File: `public/certifications_footer.png` (900px wide PNG, transparent background)
+- Used as the image in the Office 365 email signature footer, referenced by absolute URL.
+- Editable source (draw.io / diagrams.net): https://app.diagrams.net/#G1nBE095YYALne18RCt2RbxibAUtGMeKo9#%7B%22pageId%22%3A%22SQWpTvyQYhPC6-1gjHuW%22%7D
+- To update: edit the draw.io source, export a PNG, replace `public/certifications_footer.png` (keep the same filename so existing emails do not break), commit, and push. The Pages workflow redeploys automatically.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
